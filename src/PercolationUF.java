@@ -20,7 +20,7 @@ public class PercolationUF implements IPercolate{
         VBOTTOM = (size *size) + 1;
 
     }
-    protected boolean inBounds(int row, int col) {
+    private boolean inBounds(int row, int col) {
         if (row < 0 || row >= myGrid.length) return false;
         if (col < 0 || col >= myGrid[0].length) return false;
         return true;
